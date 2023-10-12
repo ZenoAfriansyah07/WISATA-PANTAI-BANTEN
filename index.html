@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Wisata Pantai Banten</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color:  #315098;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  border-radius: 20px 20px 0px 0px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  height: 1500px; /* only for demonstration, should be removed */
+  background: #8ca8be;
+  padding: 20px;
+}
+.statistika{
+  padding: 10px;
+  width: auto;
+  background-color: whitesmoke;
+}
+
+#copyright{
+  text-align: right;
+  position: static;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 85%;
+  background-color: #afbdb0;
+  height: 1500px; /* only for demonstration, should be removed */
+}
+
+.clock {
+    
+    border-radius: 20px;
+    position: absolute;
+    right: 40px;
+    transform: translateX(10%) translateY(-50%);
+    color: #000000;
+    font-size: 20px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+    padding: 15px;
+    background-color: lavender;
+  }
+
+  #footer{
+    background-color: none;
+    font-size:20px ;
+    font-family: georgia;
+    font-style: sans;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+  }
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Style the footer */
+footer {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  border-radius: 0px 0px 20px 20px;
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <a href="index.html" title="wisata pantai banten"><img src="picture\logo.png" alt="wisata pantai banten" style="width: 200px; height: 150px;" align="left"></a>  <h2>Wisata Pantai Banten</h2>
+  <script type="text/javascript" src="./script.js" async></script>
+  <div id="DisplayClock" class="clock" onload="showTime()"></div>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      </li><li><a href="halaman anyer.html">Pantai Anyer</a></li>
+      <li><a href="halaman sawarna.html">Pantai Sawarna</a>
+      <li><a href="halaman tanjung lesung.html">Pantai Tanjung Lesung</a></li>
+      <li><a href="About.html">ADVERTISIMENT</a></li>
+      <br/>
+      <br/>
+      <div class="statistika">
+        <div>
+          <canvas id="myChart"></canvas>
+        </div>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script>
+          const ctx = document.getElementById('myChart');
+        
+          new Chart(ctx, {
+            type: 'bar',
+            data: {
+              labels: ['minggu ke1', 'Minggu ke2', 'minggu ke3','minggu ke4','bulan ini' ],
+              datasets: [{
+                label: 'Pengunjung',
+                data: [50, 40, 35,70,212],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true
+                }
+              }
+            }
+          });
+        </script>
+        <br/>
+        
+      </div>
+      <BR/>
+      <li><a href="anggota.html">ANGGOTA KELOMPOK</a></li>
+      
+    </ul>
+    
+  </nav>
+  
+  <article>
+    <center><h1>PANTAI BANTEN</h1>
+    <h1>(バンテンビーチ)</h1></center>
+    <center><img src="gambar pantai.jpg" style="height: 200px; width: 300px; border-radius: 10px;">
+   <p>Selamat datang di website kami yang menyediakan rekomendasi wisata pantai yang ada di Banten.
+    disini kami menyediakan rekomendasi tempat-tempat berlibur khususnya tempat wisata yang ada di Banten. 
+    anda bisa membaca informasi lebih lanjut di bawah ini.</p></center>
+    <center>
+    <img src="anyer gambar.jpeg" style="height: 150px; width: 250px; border-radius: 
+    10px;">
+    <img src="pantai sawarna.jpeg"style="height: 150px; width: 250px; border-radius: 
+    10px;">
+    <img src="pantai tanjung lesung.jpeg"style="height: 150px; width: 250px; border-radius: 
+    10px;"></center>
+
+<center><p>Di website ini kami menyediakan  tiga tempat wisata Pantai yang ada di Banten
+dengan biaya masuk yang terjangkau dengan biaya mulai dari Rp.10.000 untuk tiket masuk tanpa kendaraan per orang,
+Rp.25.000 untuk tiket masuk sepeda motor termasuk orang,Rp.100.000 tiket masuk sedan/kijang termasuk orang,
+Rp.250.000 tiket masuk Elf termasuk orang,Rp.500.000 tiket masuk bis kecil termasuk orang,Rp.600.000 tiket
+masuk bis long medium termasuk orang,Rp.800.000 tiket masuk bis besar termasuk orang</p></center>
+<center><p>UU.No 10 Tahun 2009 tentang kepariwisataan.larangan.pasal 27 menyatakan:(1)setiap orang dilarang
+merusak sebagian atau seluruh fisik daya tarik wisata.</p></center>
+<center>
+<h4>ADVERTISEMENT</h4>
+<img src="sedekah.png" style="height: 400px; width: 300px; border-radius: 20px;"
+</center>
+<br/>
+<br/>
+<p>Voli adalah cabang olahraga yang dimainkan secara beregu, dengan masing-masing tim terdiri dari enam orang 
+  pemain. Menurut Kamus Besar Bahasa Indonesia (KBBI) daring, voli adalah bola yang terbang atau melayang 
+  sebelum menyentuh tanah (seperti dalam bola voli atau tenis).</p>
+<center>
+  <video controls style="height: 200px; width: 300px;">
+    <source src="y2mate.com - Cinematic Volleyball video_720p.mp4" type="video/webm">
+  </video>
+</center>
+  </article>
+</section>
+<footer>
+ <p><marquee  scrollamount="10" id="footer" direction="right">© 2023 ZENO AFRIANSYAH</marquee></p>
+</footer>
+
+</body>
+</html>

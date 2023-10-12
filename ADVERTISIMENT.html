@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Wisata Pantai Banten</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color:  #315098;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  border-radius: 20px 20px 0px 0px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  height: 500px; /* only for demonstration, should be removed */
+  background: #8ca8be;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 85%;
+  background-color: #afbdb0;
+  height: 500px; /* only for demonstration, should be removed */
+}
+
+#copyright{
+  text-align: right;
+  position: static;
+}
+
+
+#footer{
+    background-color: none;
+    font-size:20px ;
+    font-family: georgia;
+    font-style: sans;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+  }
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  border-radius: 0px 0px 20px 20px;
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <a href="index.html" title="wisata pantai banten"><img src="picture\logo.png" alt="wisata pantai banten" style="width: 200px; height: 150px;" align="left"></a>  <h2>Wisata Pantai Banten</h2>
+</header>
+
+<section>
+  <nav>
+    <p>ADVERTISIMENT</p>
+    <ul>
+      <li><a href="index.html">home</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h2 style="text-align: center;">BUANG SAMPAH PADA TEMPATNYA</h2>
+    <marquee><img src="iklan buang sampah.jfif"></marquee>
+     <P>Membuang sampah sembarangan tidak hanya merugikan diri sendiri, tetapi juga orang lain. Bisa dikatakan,
+      kebiasaan membuang sampah sembarangan merupakan bentuk tindakan mengambil hak orang lain.
+      Dalam buku Penanganan dan Pengolahan Sampah (2008) karya Rudi Hartono, sampah adalah material sisa yang
+      dihasilkan dari aktivitas manusia. Contohnya bungkus makanan, plastik, kertas, dan masih banyak lagi.
+      Membuang sampah sembarangan adalah perilaku atau kebiasaan membuang material sisa berupa sampah ke tempat 
+      yang tidak seharusnya atau sembarangan.
+      Contohnya membuang sampah di tepi jalan dan sungai.</P>
+  </article>
+</section>
+
+<footer>
+    <p><marquee  scrollamount="10" id="footer" direction="right">© 2023 ZENO AFRIANSYAH</marquee></p>
+ </footer>
+</body>
+</html>
+

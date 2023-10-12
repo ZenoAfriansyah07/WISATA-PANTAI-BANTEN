@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Wisata Pantai Banten</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color:  #315098;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  border-radius: 20px 20px 0px 0px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  height: 800px; /* only for demonstration, should be removed */
+  background: #8ca8be;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 85%;
+  background-color: #afbdb0;
+  height: 800px; /* only for demonstration, should be removed */
+}
+
+#copyright{
+  text-align: right;
+  position: static;
+}
+
+
+#footer{
+    background-color: none;
+    font-size:20px ;
+    font-family: georgia;
+    font-style: sans;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+  }
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  border-radius: 0px 0px 20px 20px;
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <a href="index.html" title="wisata pantai banten"><img src="picture\logo.png" alt="wisata pantai banten" style="width: 200px; height: 150px;" align="left"></a>  <h2>Wisata Pantai Banten</h2>
+</header>
+
+<section>
+  <nav>
+    <p>ANGGOTA KELOMPOK</p>
+    <ul>
+      <li><a href="index.html">home</a></li>
+    </ul>
+  </nav>
+  <article>
+<center><h2>CONTACT US</h2></center>
+  <h2>ZENO AFRIANSYAH</h2>
+   <ul>
+    <li>+62 895-6134...</li>
+    <li>Email:zenoafriasnyahzeno@gmail.com</li>
+    <li>instagram:a_zenoo</li>
+   </ul>
+   <h2>FAREL SAPUTRA</h2>
+    <ul>
+      <li>+62 813-1752...</li>
+      <li>Email:farelsaputra270607@gmail.com</li>
+      <li>instagram:farlsptr_</li>
+    </ul>
+    <h2>MUHAMMAD ALIF</h2>
+    <ul>
+      <li>+62 812-800...</li>
+      <li>Email:geloberutal@gmail.com</li>
+      <li></li>
+    </ul>
+    <h2>MUHAMMAD AKMAL</h2>
+    <ul>
+      <li>+62 878-1845...</li>
+      <li>email:yesakml26@gmail.com</li>
+      <li>instragam:muhammad_akml68 </li>
+    </ul>
+    <h2>FANISA</h2>
+    <ul>
+      <li>+62 813-8923...</li>
+      <li>Email:fanisasalsa02@gmail.com</li>
+      <li>instagram:fanisacntk</li>
+    </ul>
+  </article>
+</section>
+
+<footer>
+  <p><marquee  scrollamount="10" id="footer" direction="right">© 2023 ZENO AFRIANSYAH</marquee></p>
+ </footer>
+</body>
+</html>
+

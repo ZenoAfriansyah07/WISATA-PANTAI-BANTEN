@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Wisata Pantai Banten</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color:  #315098;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  border-radius: 20px 20px 0px 0px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  height: 1000px; /* only for demonstration, should be removed */
+  background: #8ca8be;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 85%;
+  background-color: #afbdb0;
+  height: 1000px; /* only for demonstration, should be removed */
+}
+
+#copyright{
+  text-align: right;
+  position: static;
+}
+
+#footer{
+    background-color: none;
+    font-size:20px ;
+    font-family: georgia;
+    font-style: sans;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+  }
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  border-radius: 0px 0px 20px 20px;
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <a href="index.html" title="wisata pantai banten"><img src="picture\logo.png" alt="wisata pantai banten" style="width: 200px; height: 150px;" align="left"></a>  <h2>Wisata Pantai Banten</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <p>Pantai Anyer</p>
+      <li><a href="index.html">home</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <center><h1>PANTAI ANYER</h1>
+    <h1>(アニェール ビーチ)</h1></center>
+   <center><img src="anyer gambar.jpeg" style="height: 200px; width: 300px; border-radius: 20px;"></center>
+   <BR/>
+   <button type="button" onclick='document.getElementById("demo").innerHTML = "The northern coastal area of Banten is blessed with charming beaches. Its long coastline and safe waves make tourist destinations in this area busy and well known since the 80s. One of the most famous is Anyer Beach. Anyer Beach is 120 km or takes 3 hours from Jakarta. Meanwhile, from the city of Serang, this beach is only 38 km away.<br/><br/>The Anyer area is actually a coastal city that was targeted by the Dutch during the colonial era. This is proven by the existence of the Cikoneng lighthouse which was established in 1885. This city is also a connection to the zero point of the postal highway which was built in the 19th century by the Dutch. At that time, the Anyer Penarukan road was a road that penetrated the western tip of Java to the eastern part of the island of Java.<br/><br/>Apart from that, Anyer has stunning beaches. Anyer beach is the beach most often visited by tourists. Its blackish white sand and its length makes this beach an idol for the people of Banten and the surrounding beaches here do not have coral or other rocks, so it is very safe to use as a playground. The cool breeze and relatively slow rolling waves make visitors comfortable playing on the edge of this beach. There are quite a few of them. the tourists who spread their mats on the sand just sit back and relax enjoying this beach<br/><br/>anyer beach is also equipped with facilities such as adequate accommodation. Starting from the star class to the jasmine class, it can be a choice for visitors along the way Raya Anyer is something that should not be missed when you are at Anyer Beach. The moment of sunset or watching the legendary Mount Krakatoa is a must for visiting Anyer Beach."'>translate to english</button>
+
+
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "Daerah pesisir pantai utara banten di anugerahi dengan pantai pantainya yang menawan.garis pantainya yang panjang serta ombaknya yang aman membuat destinasi wisata di kawasan ini telah ramai dan begitu di kenal sejak tahun 80-an.salah satu yang paling tekenal adalah pantai anyer. Pantai anyer berjarak 120 km atau memakan waktu 3 jam dari jakarta.sedangkan dari kota serang,pantai ini hanya berjarak 38 km.<br/><br/>Kawasan anyer sebenarnya adalah kota pantai yang telah menjadi incaran belanda saat zaman penjajahan.hal ini di buktikan dengan adanya mercusuar cikoneng yang berdiri sejak tahun 1885.kota ini juga menjadipenghubung titik nol jalan raya pos yang di bangun pada abad ke 19 oleh belanda. saat itu jalan anyer penarukan adalah jalan yang menembus ujung jawa bagian barat hingga timur pulau jawa.<br/><br/>terlepas dari itu anyer memiliki pantai pantai yang mempesona.pantai anyer menjadi pantai yang palingsering di kunjungi wisatawan.pasirnya yang putih kehitaman dan memanjang menjadikan pantai ini idola masyarakat banten dan sekitarnya pantai di sini tidak memiiki karang serta bebatuan lainnya,sehingga sangat aman untuk dijadikan arena bermain.hembusan angin yang sejuk serta gulungan ombak yang relatif pelan menjadikan pengunjung nyaman bermain di pinggir pantai ini.tidak sedikit pula para wisatawan yang menggelar tikar di atas pasir sekedar duduk santai menikmati pantai ini<br/><br/>pantai anyer juga telah dilengkapi fasilitas seperti penginapan-penginapan yang memadai.mulai dari kelas yang berbintang hingga kelas melati dapat menjadi pilihan pengunjung di sepanjang jalan raya anyer.satu yang tidak boleh dilewatkan saat berada di pantai anyer.moment matahari tenggelam atau menyaksikan anak gunung krakatau yang telah melegenda menjadi keharusan sangat berwisata di pantai anyer."'>translate to bahasa</button>
+
+        <p id="demo">Daerah pesisir pantai utara banten di anugerahi dengan pantai pantainya yang menawan.
+          garis pantainya yang panjang serta ombaknya yang aman membuat destinasi wisata di kawasan ini
+          telah ramai dan begitu di kenal sejak tahun 80-an.salah satu yang paling tekenal adalah pantai anyer.
+          Pantai anyer berjarak 120 km atau memakan waktu 3 jam dari jakarta.sedangkan dari kota serang,pantai
+          ini hanya berjarak 38 km.<br/>
+          <br/>
+          Kawasan anyer sebenarnya adalah kota pantai yang telah menjadi incaran belanda saat zaman penjajahan.
+           hal ini di buktikan dengan adanya mercusuar cikoneng yang berdiri sejak tahun 1885.kota ini juga menjadi
+          penghubung titik nol jalan raya pos yang di bangun pada abad ke 19 oleh belanda. saat itu jalan anyer
+          penarukan adalah jalan yang menembus ujung jawa bagian barat hingga timur pulau jawa.<br/>
+          <br/>
+          terlepas dari itu anyer memiliki pantai pantai yang mempesona.pantai anyer menjadi pantai yang paling
+            sering di kunjungi wisatawan.pasirnya yang putih kehitaman dan memanjang menjadikan pantai ini idola
+            masyarakat banten dan sekitarnya pantai di sini tidak memiiki karang serta bebatuan lainnya,sehingga 
+            sangat aman untuk dijadikan arena bermain.hembusan angin yang sejuk serta gulungan ombak yang relatif
+            pelan menjadikan pengunjung nyaman bermain di pinggir pantai ini.tidak sedikit pula para wisatawan 
+            yang menggelar tikar di atas pasir sekedar duduk santai menikmati pantai ini<br/>
+            <br/>
+           pantai anyer juga telah dilengkapi fasilitas seperti penginapan-penginapan yang memadai.
+              mulai dari kelas yang berbintang hingga kelas melati dapat menjadi pilihan pengunjung di sepanjang
+              jalan raya anyer.satu yang tidak boleh dilewatkan saat berada di pantai anyer.moment matahari
+              tenggelam atau menyaksikan anak gunung krakatau yang telah melegenda menjadi keharusan sangat
+              berwisata di pantai anyer.</p>
+
+
+
+
+
+
+        <center>
+          <video controls style="height: 200px; width: 300px;">
+            <source src="BEACH SHORT DIARY _ Cinematic video.mp4" type="video/webm">
+          </video>
+        </center>
+  </article>
+</section>
+
+<footer>
+  <p><marquee  scrollamount="10" id="footer" direction="right">© 2023 ZENO AFRIANSYAH</marquee></p>
+ </footer>
+</body>
+</html>
